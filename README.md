@@ -23,20 +23,11 @@ Electrocardiogram (ECG) arrhythmia classifiers are typically trained and evaluat
 | S (supraventricular) F1 | 0.09 | 0.34 |
 | V (ventricular) F1 | 0.77 | 0.23 |
 
-The ventricular class, strong in-dataset, is the least robust cross-dataset -- 60% of true PTB-XL V beats are misclassified as normal. A sampling-rate-matched control experiment shows this is not explained by the 360 Hz vs 100 Hz acquisition difference between datasets.
+The ventricular class, strong in-dataset, is the least robust cross-dataset -- 60% of true PTB-XL V beats are misclassified as normal. A sampling-rate-matched control experiment shows this is not explained by the 360 Hz vs 100 Hz acquisition difference between datasets: matching the training rate to 100 Hz left cross-dataset macro-F1 essentially unchanged (0.3546 to 0.3562) and ventricular recall moved slightly lower rather than recovering (0.257 to 0.236).
 
 ## Installation
 
-Requires Python 3.9+:
-
-pip install -r requirements.txt
-
-wfdb
-numpy
-pandas
-scipy
-scikit-learn
-joblib
+Requires Python 3.9+. Install dependencies with:
 
 ## Usage
 
@@ -62,8 +53,4 @@ Wagner, P., Strodthoff, N., Bousseljot, R. D., Kreiseler, D., Lunze, F. I., Same
 
 ## License
 
-MIT License (see LICENSE)
-
-
-
-
+MIT License (see LICENSE.md)
