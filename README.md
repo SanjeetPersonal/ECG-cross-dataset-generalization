@@ -28,3 +28,30 @@ The ventricular class, strong in-dataset, is the least robust cross-dataset -- 6
 ## Installation
 
 Requires Python 3.9+:
+
+pip install -r requirements.txt
+
+wfdb
+numpy
+pandas
+scipy
+scikit-learn
+joblib
+
+## Usage
+
+Run scripts in order:
+1. `extract_mitbih.py` -- MIT-BIH feature extraction
+2. `train_model.py` -- train random forest on DS1
+3. `evaluate_indataset.py` -- evaluate on DS2 (in-dataset)
+4. `extract_ptbxl.py` -- PTB-XL feature extraction
+5. `evaluate_crossdataset.py` -- evaluate trained model on PTB-XL
+6. `control_100hz.py` -- sampling-rate-matched control experiment
+
+Data (MIT-BIH and PTB-XL) is downloaded automatically from PhysioNet by the extraction scripts.
+
+## License
+
+MIT License (see LICENSE)
+
+
