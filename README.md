@@ -50,8 +50,20 @@ Run scripts in order:
 
 Data (MIT-BIH and PTB-XL) is downloaded automatically from PhysioNet by the extraction scripts.
 
+## Repository structure
+
+## References
+
+de Chazal, P., O'Dwyer, M., & Reilly, R. B. (2004). Automatic classification of heartbeats using ECG morphology and heartbeat interval features. *IEEE Transactions on Biomedical Engineering*, 51(7), 1196-1206. https://doi.org/10.1109/TBME.2004.827359
+
+Moody, G. B., & Mark, R. G. (2001). The impact of the MIT-BIH arrhythmia database. *IEEE Engineering in Medicine and Biology Magazine*, 20(3), 45-50.
+
+Wagner, P., Strodthoff, N., Bousseljot, R. D., Kreiseler, D., Lunze, F. I., Samek, W., & Schaeffter, T. (2020). PTB-XL, a large publicly available electrocardiography dataset. *Scientific Data*, 7(1), 154. https://doi.org/10.1038/s41597-020-0495-6
+
 ## License
 
 MIT License (see LICENSE)
+
+
 
 
