@@ -6,7 +6,7 @@ from scipy.signal import butter, filtfilt
 
 # Downloads MIT-BIH directly from PhysioNet instead of relying on a local zip
 os.makedirs("data/mitbih", exist_ok=True)
-wfdb.dl_database('mitdb', dl_dir='data/mitbih')
+wfdb.dl_database('mitdb', dl_dir='data/mitbih', keep_subdirs=False)
 root = "data/mitbih"
 
 AAMI = {
